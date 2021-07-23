@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>last demo</title>
+  <!-- <script src="https://code.jquery.com/jquery-3.5.0.js"></script> -->
+  <script src="js/jquery-3.6.0.js"></script>
+  <script>
+    function changeColor() {
+        //$( "tr" ).last().css({ backgroundColor: "yellow", fontWeight: "bolder" });
+        $( "tr:last" ).css( "background-color", "yellow" );
+    }
+
+</script>
+</head>
+<body>
+ 
+<table>
+  <tr><td>First Row</td></tr>
+  <tr><td>Middle Row</td></tr>
+  <tr><td>Last Row</td></tr>
+</table>
+<input type="button" value="click me" onclick="changeColor()">
+ 
+
+ 
+</body>
+</html>
