@@ -5,8 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        function changeColor() {
+            $("body div p").css("background-color", "gray");
+        }
+    </script>
 </head>
 <body>
-    
+    <div>
+        <p align="center" style="float: left; background-color: aqua; width: 150px; height: 120px;"></p>
+        <p align="center" style="float: left; background-color: maroon; width: 150px; height: 120px;"></p>
+        <p align="center" style="float: left; background-color: green; width: 150px; height: 120px;"></p>
+    </div>
+    <br><br><br><br><br><br>
+    <div>
+        <br><br><br>
+        <input type="button" onclick="changeColor()" value="Click Me" />
+    </div>
 </body>
 </html>
