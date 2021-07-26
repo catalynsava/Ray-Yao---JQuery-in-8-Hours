@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Many Elements</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        function checkLength() {
+            alert("The number of divs are: " + $("div").length );
+        }
+    </script>
+</head>
+<body>
+    <p onclick="checkLength()" style="cursor: pointer; color: red;">Click Here</p>
+    <div style="color: green;">This is first div</div>
+    <div style="color: blue;">This is 2nd div</div>
+    <div style="color: green;">This is 3nd div</div>
+    <div style="color: blue;">This is 4nd div</div>
+</body>
+</html>

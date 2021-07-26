@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>check element condition</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        function checkGender() {
+            if ($( "#chkMale" ).is( ":checked" )) {
+                alert( "Male is selected" );
+            }else if ( $("#chkFemale").is( ":checked" ) ) {
+                alert( "Female is selected" );
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="chkGender" onclick="checkGender()" style="cursor: pointer; color: red;">Click Here</div>
+    <input type="radio" name="sex" id="chkMale" value="male">Male<br>
+    <input type="radio" name="sex" id="chkFemale" value="female">Female<br>
+</body>
+</html>
