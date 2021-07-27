@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$("div tag")</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        function getChild() {
+            alert( $( "p span" ).length );
+        }
+    </script>
+</head>
+<body>
+    <div onclick="getChild()" style="cursor: pointer; width: 300px; height: 20px; color: red;">Click Here</div>
+    <p>
+        <span style="float: left; width: 100%; padding: 5px;">This is top level child</span>
+        <span style="float: left; width: 100%; padding: 5px;">This is top level child</span>
+        <span style="float: left; width: 100%; padding: 5px;">This is top level child
+            <span style="float: left; width: 100%; padding: 5px;">This is sub level child</span>
+        </span>
+    </p>
+</body>
+</html>

@@ -8,12 +8,18 @@
     <script src="js/jquery-3.6.0.js"></script>
     <script>
         function checkLength() {
-            alert("The number of divs are: " + $("div").length );
+            
+
+            for (let index = 0; index < $( "div" ).length; index++) {
+                var listItems = $( "div" ).slice( index );
+                console.log( index + ":" + $( "div" ).slice( index ).html() );
+            }
         }
     </script>
 </head>
 <body>
     <p onclick="checkLength()" style="cursor: pointer; color: red;">Click Here</p>
+   
     <div style="color: green;">This is first div</div>
     <div style="color: blue;">This is 2nd div</div>
     <div style="color: green;">This is 3nd div</div>
