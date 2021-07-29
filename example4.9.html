@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test page</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        function getVal() {
+            alert( $( "#ddlGender" ).val() );
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Click Here" onclick="getVal()" />
+    <select id="ddlGender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+</body>
+</html>
