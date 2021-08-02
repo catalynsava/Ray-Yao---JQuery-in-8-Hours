@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is a test page</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        function getCordinates() {
+            var x = event.screenX;
+            var y = event.screenY;
+            alert( "X coords: " + x + ", Y coords: " + y );
+        }
+    </script>
+</head>
+<body onmousedown="getCordinates()">
+    <br />
+    <center>
+        <h3>Please click anywere in web page</h3>
+    </center>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is a test page</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        $( document ).ready( function(){
+            $( "#btnClick" ).click( function(){
+                alert( "I am Click Event" );
+            } );
+            $( "#btnMouseOver" ).mouseover( function(){
+                alert( "I am Mouse Over Eevent" );
+            } );
+            $( "#btnMouseLeave" ).mouseleave(function(){
+                alert( "I am Mouse Leave Event" );
+            });
+        } );
+    </script>
+</head>
+<body>
+    <input type="button" value="Click Eevent" id="btnClick" />
+    <input type="button" value="Mouse Over Event" id="btnMouseOver" />
+    <input type="button" value="Mouse Leave Eevent" id="btnMouseLeave" />
+</body>
+</html>
