@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fadeTo</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        function fadeToDiv() {
+            $( "#divMsg" ).fadeTo(1000, 0.3);
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="fade to Div" onclick="fadeToDiv()">
+    <div>
+        <br />
+        <div id="divMsg" style="background-color: green; color: white; width: 200px; height: 200px;">I am a div</div>
+    </div>
+</body>
+</html>

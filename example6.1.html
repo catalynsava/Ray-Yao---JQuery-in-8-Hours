@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>is a test page</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+       var isShown = false;
+      
+
+        $( document ).ready( function(){
+            
+                $( "#btnShow" ).click( function(){
+                    if (isShown == false) {
+                        $( "p" ).show("slow", function(){
+                            alert(  "I am call after paragraph fully shown"  );
+                            isShown=true;
+                        })
+                    }else{
+                        $( "p" ).hide("slow", function(){
+                            alert(  "I am call after paragraph fully hidden"  );
+                            isShown=false;
+                        })
+                    }
+                }); 
+        } );
+           
+    </script>
+</head>
+<body>
+    <input type="button" value="Show Me" id="btnShow" />
+    <p style="display: none;">This is a paragraph</p>
+</body>
+</html>

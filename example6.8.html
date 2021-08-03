@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slideToggle</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        function slideToggleDiv() {
+            $("#divMsg").slideToggle(1000, function(){
+                alert( "slide toggle is complete!" );
+            });
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="slide toggle Div" onclick="slideToggleDiv()" />
+    <div id="divMsg" style="background-color: maroon; color: white; width: 200px; height: 200px; ">I am a div ;)</div>
+</body>
+</html>

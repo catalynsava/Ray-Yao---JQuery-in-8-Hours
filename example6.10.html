@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animate()</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        function animateDiv() {
+            $( "#divMsg" ).animate({width:"350px", height:"350px", opacity:"0.5", fontSize:"3em", left:"450pxp"},"slow", function(){
+                alert( "The animate method is completed!");
+            });
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="animate to Div" onclick="animateDiv()">
+    <div>
+        <br />
+        <div id="divMsg" style="background-color: green; color: white; width: 200px; height: 200px; position: absolute;">
+            I am a div with some custom animation
+        </div>
+    </div>
+</body>
+</html>
