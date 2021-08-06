@@ -1,0 +1,1 @@
+<h1>Hello! Ajax is testing!</h1>
