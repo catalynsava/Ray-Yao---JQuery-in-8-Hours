@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Success</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        $(function(){
+            $.ajax({
+                type: "get",
+                url: "myFile.txt",
+                success: suss,
+                error: err
+            });
+        });
+
+        function suss(data) {
+            $( "div" ).html(data);
+        }
+
+        function err(xhr, message, e) {
+            $( "div" ).text(message);
+        }
+    </script>
+</head>
+<body>
+    <h3>Handling Ajax errors</h3>
+    Success or error mesage:
+    <div></div>
+</body>
+</html>
